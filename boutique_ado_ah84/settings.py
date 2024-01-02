@@ -10,8 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 from pathlib import Path
+
 import os
 import dj_database_url
+
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
@@ -30,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['boutique-ado-ah84-bc688be409f8.herokuapp.com/', 'localhost']
+ALLOWED_HOSTS = ['boutique-ado-ah84-bc688be409f8.herokuapp.com', 'localhost']
 
 
 # Application definition
