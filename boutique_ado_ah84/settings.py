@@ -14,10 +14,10 @@ from pathlib import Path
 import os
 import dj_database_url
 
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 
 # Load environment variables from .env file
-# load_dotenv()
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -186,7 +186,7 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
-#STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
 
 # Default primary key field type
