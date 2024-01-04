@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 import dj_database_url
-if DEBUG = 'DEVELOPMENT' in os.environ:    
+if 'DEVELOPMENT' in os.environ:    
     from dotenv import load_dotenv
     # Load environment variables from .env file
     load_dotenv()
